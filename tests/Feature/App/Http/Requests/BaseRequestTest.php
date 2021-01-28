@@ -36,7 +36,7 @@ class BaseRequestTest extends TestCase
         $this->setUpHasLang();
 
         $request = $this->createRequest();
-        $flatten = Arr::flatten($request->attribute());
+        $flatten = Arr::flatten($request->attributes());
         return array_map(
             fn ($v) => [ $v ],
             $flatten

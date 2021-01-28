@@ -28,7 +28,7 @@ class BaseRequest extends FormRequest
         ];
     }
 
-    public function attribute()
+    public function attributes()
     {
         return [
             'reset'     => __('passwords.reset'),
