@@ -15,6 +15,7 @@ trait HasLang
     protected function setUpHasLang()
     {
         Lang::setLocale($this->fakeKey);
+        Lang::setFallback($this->fakeKey);
     }
 
     protected function assertHasLang(string $key, string $locale, ?string $message)
